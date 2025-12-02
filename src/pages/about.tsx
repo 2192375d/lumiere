@@ -11,8 +11,8 @@ export default function About() {
         <li>linear algebra</li>
         <li>theory of computation</li>
         <li>probability analysis</li>
-        <li>logics</li>
-        <li>music theories in general</li>
+        <li>logic</li>
+        <li>music theory</li>
       </ul>
 
       {/* <p>My favorite type of chocolate is ""</p> */}

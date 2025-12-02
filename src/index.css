@@ -37,8 +37,7 @@ h1 {
 
 h2 {
   color: #34d399;
-  border: 2px solid #34d399;
-  padding: 8px;
+
 }
 
 h3 {
@@ -83,18 +82,30 @@ pre code {
   color: #f1f5f9;
 }
 
+
+
 .hcontainer {
   /* margin: 0; */
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .vcontainer {
-  /* margin: 0; */
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+::selection {
+  background: #38bdf8;
+  color: #0b1220;
+}
+
+::-moz-selection {
+  background: #38bdf8;
+  color: #0b1220;
 }
 
 /*_____________________components specific_____________________*/
@@ -117,16 +128,13 @@ pre code {
   /* position: fixed; */
   border: solid  1px;
   background-color: ;
-  line-height: 2;
+  line-height: 25px;
 
   font-size: 20px;
   text-align: center;
   width: 150px;
-  padding: 5px;
+  padding: 10px;
 }
-
-
-
 
 .main_page {
   padding: 2rem;
@@ -174,7 +182,6 @@ pre code {
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 50px;
-
 }
 
 .postsNavBar .vcontainer a {
@@ -184,6 +191,11 @@ pre code {
   padding: 8px;          /* or use 8px 0 if you don’t want side padding */
   line-height: 1.5;
   text-align: center;
+}
+
+.postCard h2 {
+  border: 2px solid #34d399;
+  padding: 8px;
 }
 
 .postLink {
@@ -206,39 +218,51 @@ pre code {
   border-color: #ef4444;
 }
 
+/*_____________________posts_____________________*/
+
+.techImg {
+  border: 2px solid #34d399;
+  border-radius: 10px;
+  background: #142040;
+  width: 90px;
+  height: 90px;
+
+  padding: 10px;
+  margin: 10px;
+}
+.techImg:hover {
+  background: #1b2c55;
+  border-color: #ef4444;
+}
+
+
 
 /*_____________________abandoned stuffs_____________________*/
-.gamesGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: flex-start;
-  }
+/* .gamesGrid { */
+/*     display: flex; */
+/*     flex-wrap: wrap; */
+/*     gap: 1.5rem; */
+/*     justify-content: flex-start; */
+/*   } */
+/**/
+/* .gameDisplay { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items: center; */
+/*   gap: 0.5rem; */
+/* } */
+/**/
+/* .gameDisplayImg { */
+/*   width: 150px; */
+/*   height: auto; */
+/*   border-radius: 8px; */
+/* } */
+/**/
+/* .gameDisplayTitle { */
+/*   font-weight: 600; */
+/*   text-align: center; */
+/* } */
 
-.gameDisplay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.gameDisplayImg {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.gameDisplayTitle {
-  font-weight: 600;
-  text-align: center;
-}
-
-::selection {
-  background: #38bdf8;
-  color: #0b1220;
-}
-
-::-moz-selection {
-  background: #38bdf8;
-  color: #0b1220;
-}
+/* img.invert { */
+/*   filter: invert(1) hue-rotate(180deg); */
+/* } */

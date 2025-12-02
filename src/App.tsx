@@ -4,6 +4,7 @@ import NavBar from './components/navBar'
 import Home from './pages/home'
 import About from './pages/about'
 import Posts from './pages/posts'
+import Tech from './pages/tech'
 // import Games from './pages/games'
 import './App.css'
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/posts" element={<Posts />} />
+            <Route path="/tech" element={<Tech />} />
             {/* <Route path="/games" element={<Games />} /> */}
             <Route path="*" element={<div>Not found</div>} />
           </Routes>
