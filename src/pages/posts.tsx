@@ -10,7 +10,7 @@ export default function Posts() {
 
   return (
     <>
-      <h1>POSTS</h1>
+      <h1>(DEV) POSTS</h1>
 
       {posts.map(({ title, date, Component }) => {
         return (
