@@ -17,7 +17,7 @@ export default function About() {
 
       {/* <p>My favorite type of chocolate is ""</p> */}
 
-      <p>I spend a good chunk of my life playing video games, the games I played cover almost all genres out there, and I wanna become a game dev in the future</p>
+      <p>I spend a good chunk of my life playing video games; the games I played cover almost all genres out there, and I wanna become a game dev in the future</p>
     </>
   )
 }
