@@ -4,7 +4,7 @@ export default function matrix_calculation() {
   return (
     <section>
 
-      Documented on November 28th, 2025
+      Logged on November 28th, 2025
 
       <br />
       A C++ project able to perform linear algebra computations including solving system of linear equations, compute nullspace, find determinant. Where everything is connected to a CLI interface
@@ -13,7 +13,6 @@ export default function matrix_calculation() {
       <ul>
         <li><a href="https://github.com/2192375d/matrix_calculation">github link</a></li>
       </ul>
-      <br />
       (Jump to the <a href="#matrix-calculation stage 3">stage 3</a> for the actual coding part)
 
       <br />
