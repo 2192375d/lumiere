@@ -40,7 +40,7 @@ h2 {
 h3 {
   /* color: #34d399; */
   text-decoration: underline;
-  color: var(--color-h2);
+  color: #4ac7c7;
   /* color: #7c5bff; */
 
   /* text-decoration: none; */
@@ -195,6 +195,13 @@ pre code {
 .postCard h2 {
   border: 1px solid var(--color-h2);
   padding: 8px;
+}
+
+.postCard a {
+  color: var(--color-post-link);
+}
+.postCard a:hover {
+  color: #c3d4ff;
 }
 
 .postLink {

@@ -1,11 +1,11 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import PostsNavBar from './components/postsNavBar'
+import PostsNavBar from '@components/postsNavBar'
 import NavBar from '@components/navBar'
-import Home from './pages/home'
-import About from './pages/about'
-import Posts from './pages/posts'
-import Tech from './pages/tech'
-// import Games from './pages/games'
+import Home from '@pages/home'
+import About from '@pages/about'
+import Posts from '@pages/posts'
+import Tech from '@pages/tech'
+// import Games from '@pages/games'
 import './App.css'
 
 

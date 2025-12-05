@@ -3,6 +3,8 @@ const ASSET_SOURCE = "/assets/posts/CirnoS/";
 export default function CirnoS() {
   return (
     <section>
+      Documented on November 14th
+      <br />
       <ul>
         <li><a href="https://github.com/2192375d/Touhou-Game-Jam-16-Cirno-s-Swirlaria">github repo</a></li>
         <li><a href="https://2635266513.itch.io/cirnos-swirlaria">game link</a></li>

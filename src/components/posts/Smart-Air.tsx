@@ -1,9 +1,9 @@
 export default function SmartAir() {
   return (
     <section>
-      An Android App dedicated to help kid understand and handle Asthma.
-      <br />
       Documented on 03/11/2025
+      <br />
+      An Android App dedicated to help kid understand and handle Asthma.
       <br />
       <ul>
         <li><a href="https://github.com/Kyaw-Thiha/b07-project">github repo</a></li>
