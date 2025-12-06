@@ -1,4 +1,4 @@
-export default function About() {
+export default function AboutFr() {
   return (
     <>
       <h1>À propos</h1>
@@ -8,4 +8,3 @@ export default function About() {
     </>
   )
 }
-

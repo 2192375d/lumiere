@@ -8,7 +8,7 @@ export const posts = [
   { id: "SmartAir", title: "Smart Air", date: "November 2nd - December 2nd 2025", Component: SmartAir },
 ];
 
-export default function Posts() {
+export default function PostsEn() {
 
   return (
     <>

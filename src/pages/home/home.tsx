@@ -1,8 +1,9 @@
-// src/pages/home.tsx
 import { useLanguage } from "@contexts/languageContext";
 
 import HomeEn from "@pages/home/home.en.tsx";
 import HomeFr from "@pages/home/home.fr.tsx";
+import HomeJp from "@pages/home/home.jp.tsx";
+import HomeCn from "@pages/home/home.cn.tsx";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -10,15 +11,12 @@ export default function Home() {
   if (language === "french") {
     return <HomeFr />;
   }
-  //
-  // if (language === "japanese") {
-  //   return <HomeJapanese />;
-  // }
-  //
-  // if (language === "chinese") {
-  //   return <HomeChinese />;
-  // }
+  if (language === "japanese") {
+    return <HomeJp />;
+  }
+  if (language === "chinese") {
+    return <HomeCn />;
+  }
 
-  // default
   return <HomeEn />;
 }
