@@ -40,7 +40,7 @@ h2 {
 h3 {
   /* color: #34d399; */
   text-decoration: underline;
-  color: #4ac7c7;
+  color: var(--color-h3);
   /* color: #7c5bff; */
 
   /* text-decoration: none; */
@@ -64,7 +64,7 @@ p {
 }
 
 pre {
-  background: #0f1830;
+  background: var(--color-back-background);
   border: 1px solid;
   border-color: var(--color-border-color);
   border-radius: 10px;
@@ -105,13 +105,17 @@ pre code {
 }
 
 ::selection {
-  background: #38bdf8;
-  color: #0b1220;
+  /* background: #38bdf8; */
+  /* color: #0b1220; */
+  background: var(--color-h3);
+  color: var(--color-back-background);
 }
 
 ::-moz-selection {
-  background: #38bdf8;
-  color: #0b1220;
+  /* background: #38bdf8; */
+  background: var(--color-h3);
+  color: var(--color-back-background);
+  /* color: #0b1220; */
 }
 
 /*_____________________components specific_____________________*/
@@ -198,37 +202,40 @@ pre code {
 }
 
 .postCard a {
-  color: var(--color-post-link);
+  color: var(--color-post-accent);
 }
 .postCard a:hover {
-  color: #c3d4ff;
+  color: var(--color-post-hover);
 }
 
 .postLink {
   display: block;
+  color: var(--color-accent);
   width: 100%;
   box-sizing: border-box;
   margin: 10px 1;
-  background: #0f1830;
+  background: var(--color-main-background);
   border: 1px solid;
   border-color: var(--color-border-color);
   border-radius: 10px;
   text-align: center;
   line-height: 1.1;
-  color: #f97316;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 .postLink:hover {
-  /* background: #142040; */
+  background: var(--color-post-background);
   /* border-color: #ef4444; */
+  color: var(--color-h2);
 }
+
 
 /*_____________________posts_____________________*/
 
 .techImg {
-  border: 2px solid #34d399;
+  border: 2px solid;
+  /* border-color: var(--color-accent); */
   border-radius: 10px;
   /* background: #142040; */
   width: 90px;
@@ -238,7 +245,7 @@ pre code {
   margin: 10px;
 }
 .techImg:hover {
-  background: #1b2c55;
+  background: var(--color-post-background);
   /* border-color: #ef4444; */
 }
 

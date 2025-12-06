@@ -7,14 +7,18 @@
 
   --color-h1: #0d98ba;
   --color-h2: #34d399;
-
-  --color-accent: #f97316;
-  --color-post-link: #90b4ff;
-  /* --color-accent: #90b4ff; */
-
+  --color-h3: #4ac7c7;
 
   --color-border-color: #24385f;
 
-  --color-code: #f1f5f9;
+  --color-accent: #f97316;
+
+  /* post */
   --color-post-background: #142040;
+  --color-post-accent: #90b4ff;
+
+  --color-post-hover: #c3d4ff;
+  /* --color-postLink: #cb2c66; */
+
+  --color-code: #f1f5f9;
 }
