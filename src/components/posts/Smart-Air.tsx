@@ -27,6 +27,7 @@ export default function SmartAir() {
         <li>https://github.com/Tina-wanjun</li>
         <li>https://github.com/J0thame</li>
       </ul>
+      to be continued...
     </section>
   )
 }
