@@ -1,0 +1,20 @@
+:root {
+  --color-back-background: #0b1220;
+  --color-main-background: #101a2f;
+
+  --color-text: #97f9cc;
+  --color-text: #cde7dd;
+
+  --color-h1: #0d98ba;
+  --color-h2: #34d399;
+
+  --color-accent: #f97316;
+  --color-post-link: #90b4ff;
+  /* --color-accent: #90b4ff; */
+
+
+  --color-border-color: #24385f;
+
+  --color-code: #f1f5f9;
+  --color-post-background: #142040;
+}
