@@ -12,13 +12,9 @@ html {
 
 body {
   margin: 20px;
-  /* min-height: 100vh; */
-  /* background: #0b1220; */
-  /* color: #c7f9cc; */
   display: flex;
   justify-content: center;
 }
-
 
 a {
   color: var(--color-accent);
@@ -34,21 +30,11 @@ h1 {
 
 h2 {
   color: var(--color-h2);
-
 }
 
 h3 {
-  /* color: #34d399; */
   text-decoration: underline;
   color: var(--color-h3);
-  /* color: #7c5bff; */
-
-  /* text-decoration: none; */
-  /* background: rgba(52, 211, 153, 0.08); */
-  /* padding: 8px 8px; */
-  /* border-radius: 6px; */
-  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18); */
-  /* margin: 16px 0 8px; */
 }
 
 br {
@@ -91,7 +77,6 @@ pre code {
 
 
 .hcontainer {
-  /* margin: 0; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -105,8 +90,6 @@ pre code {
 }
 
 ::selection {
-  /* background: #38bdf8; */
-  /* color: #0b1220; */
   background: var(--color-h3);
   color: var(--color-back-background);
 }
@@ -119,7 +102,6 @@ pre code {
 }
 
 /*_____________________components specific_____________________*/
-
 .navColumn {
   display: flex;
   flex-direction: column;
@@ -147,17 +129,6 @@ pre code {
   width: 150px;
   padding: 10px;
 }
-
-
-
-/* .main_page p, */
-/* .main_page div, */
-/* .main_page ul, */
-/* .main_page ol, */
-/* .main_page li, */
-/* .main_page span { */
-/*   margin-left: 20px; */
-/* } */
 
 /*_____________________posts_____________________*/
 .postImg {
@@ -235,9 +206,7 @@ pre code {
 
 .techImg {
   border: 2px solid;
-  /* border-color: var(--color-accent); */
   border-radius: 10px;
-  /* background: #142040; */
   width: 90px;
   height: 90px;
 

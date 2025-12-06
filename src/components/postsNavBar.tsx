@@ -1,4 +1,4 @@
-import { posts } from "../pages/posts.tsx"
+import { posts } from "@pages/posts/posts.en.tsx"
 
 export default function PostsNavBar() {
   return (

@@ -1,4 +1,4 @@
-import { Icon } from "../components/icon.tsx";
+import { Icon } from "@components/icon.tsx";
 
 export default function Techs() {
   return (

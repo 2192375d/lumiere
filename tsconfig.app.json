@@ -38,7 +38,7 @@
       ],
       "@contexts/*": [
         "contexts/*"
-      ]
+      ],
     }
   },
   "include": [
