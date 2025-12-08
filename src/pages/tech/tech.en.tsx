@@ -1,6 +1,6 @@
-import { Icon } from "../components/icon.tsx";
+import { Icon } from "@components/icon.tsx";
 
-export default function Techs() {
+export default function TechEn() {
   return (
     <>
       <h1>TECH</h1>

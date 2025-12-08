@@ -1,6 +1,6 @@
-import CirnoS from "../components/posts/CirnoS.tsx"
-import MatrixCalculation from "../components/posts/matrix-calculation.tsx"
-import SmartAir from "../components/posts/Smart-Air.tsx"
+import CirnoS from "@components/posts/CirnoS.tsx"
+import MatrixCalculation from "@components/posts/matrix-calculation.tsx"
+import SmartAir from "@components/posts/Smart-Air.tsx"
 
 export const posts = [
   { id: "CirnoS", title: "Cirno's Swirlaria", date: "October 23rd - October 27th, 2025", Component: CirnoS },
@@ -8,7 +8,7 @@ export const posts = [
   { id: "SmartAir", title: "Smart Air", date: "November 2nd - December 2nd 2025", Component: SmartAir },
 ];
 
-export default function Posts() {
+export default function PostsEn() {
 
   return (
     <>

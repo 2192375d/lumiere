@@ -1,10 +1,11 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import PostsNavBar from '@components/postsNavBar'
 import NavBar from '@components/navBar'
-import Home from '@pages/home'
-import About from '@pages/about'
-import Posts from '@pages/posts'
-import Tech from '@pages/tech'
+import LanguageBar from "@components/languageBar"
+import Home from '@pages/home/home'
+import About from '@pages/about/about'
+import Posts from '@pages/posts/posts'
+import Tech from '@pages/tech/tech'
 import Space from '@pages/space'
 // import Games from '@pages/games'
 import './App.css'
@@ -19,6 +20,7 @@ export default function App() {
     <>
       <div className="hcontainer">
         <div className="navColumn">
+          <LanguageBar />
           <NavBar />
           <br />
           {inPostsPage && <PostsNavBar />}

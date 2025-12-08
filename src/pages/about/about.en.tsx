@@ -1,4 +1,4 @@
-export default function About() {
+export default function AboutEn() {
   return (
     <>
       <h1>ABOUT</h1>
@@ -14,7 +14,6 @@ export default function About() {
         <li>linear algebra</li>
         <li>theory of computation</li>
         <li>probability analysis</li>
-        <li>logic</li>
         <li>music theory</li>
       </ul>
 
