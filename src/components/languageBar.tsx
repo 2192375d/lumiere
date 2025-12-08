@@ -15,10 +15,10 @@ export default function LanguageBar() {
           onClick={() => setLanguage("french")}>
           fr
         </button>
-        <button
-          onClick={() => setLanguage("japanese")}>
-          あ
-        </button>
+        {/* <button */}
+        {/*   onClick={() => setLanguage("japanese")}> */}
+        {/*   あ */}
+        {/* </button> */}
         <button
           onClick={() => setLanguage("chinese")}>
           中
