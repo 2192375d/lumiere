@@ -14,7 +14,6 @@ export default function AboutEn() {
         <li>linear algebra</li>
         <li>theory of computation</li>
         <li>probability analysis</li>
-        <li>logic</li>
         <li>music theory</li>
       </ul>
 
