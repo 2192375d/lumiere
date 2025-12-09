@@ -132,9 +132,9 @@ pre code {
 
 /*_____________________posts_____________________*/
 .postImg {
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
-  max-height: 300px;
+  max-height: 350px;
   border-radius: 8px;
   margin: 10px;
 }

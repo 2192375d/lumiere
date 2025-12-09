@@ -6,8 +6,6 @@ export default function TechEn() {
       <h1>TECH</h1>
       This page contains most technologies I used
       <br />
-      (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
-      <br />
       <Icon
         href="https://en.wikipedia.org/wiki/C_(programming_language)"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
@@ -151,6 +149,8 @@ export default function TechEn() {
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
         alt="Godot"
       />
+      <br />
+      (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
       <br />
       (I don't have images for the followings becase they are not in the public domain)
       <ul>
