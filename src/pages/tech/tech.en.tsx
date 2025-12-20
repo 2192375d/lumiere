@@ -67,7 +67,7 @@ export default function TechEn() {
         alt="Firebase"
       />
       <Icon
-        href="https://vercel.com/"
+        href="https://en.wikipedia.org/wiki/Vercel"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-line.svg"
         alt="Vercel"
       />
