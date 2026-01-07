@@ -1,3 +1,5 @@
+//this file should be no longer used
+
 import { posts } from "@pages/posts/posts.en.tsx"
 
 export default function PostsNavBar() {
