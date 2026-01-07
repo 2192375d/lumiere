@@ -39,6 +39,9 @@
       "@contexts/*": [
         "contexts/*"
       ],
+      "@routes/*": [
+        "routes/*"
+      ],
     }
   },
   "include": [
