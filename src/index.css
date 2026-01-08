@@ -164,7 +164,7 @@ pre code {
   color: var(--color-post-hover);
 }
 
-.techImg {
+.icon {
   border: 2px solid;
   border-radius: 10px;
   width: 90px;
@@ -173,7 +173,7 @@ pre code {
   padding: 10px;
   margin: 10px;
 }
-.techImg:hover {
+.icon:hover {
   background: var(--color-post-background);
   /* border-color: #ef4444; */
 }

@@ -1,5 +1,5 @@
-import NavBar from '@components/navBar'
-import LanguageBar from "@components/languageBar"
+import NavBar from '@components/NavBar'
+import LanguageBar from "@components/LanguageBar"
 
 import AppRoutes from "@routes/AppRoutes"
 
