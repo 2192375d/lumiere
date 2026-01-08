@@ -10,6 +10,13 @@ type Post = {
 
 export const posts: Post[] = [
   {
+    id: "all-ice",
+    title: "AllIce in Wonderlands",
+    date: "December 20th, 2025 - January 3rd, 2026",
+    description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses",
+    loadComponent: () => import("@components/posts/all-ice.tsx"),
+  },
+  {
     id: "smart-air",
     title: "Smart Air",
     date: "November 2nd - December 2nd 2025",
@@ -27,9 +34,10 @@ export const posts: Post[] = [
     id: "matrix-calculation",
     title: "Linear Algebra Calculator",
     date: "January 2024 - November 2025",
-    description: "A CLI based linear algebra calculator able to do basic matrix operations, Gaussian elimination and it's applications",
+    description: "A CLI based linear algebra calculator able to perform basic matrix operations, Gaussian elimination and it's applications",
     loadComponent: () => import("@components/posts/matrix-calculation.tsx"),
   },
+
 ];
 
 export default function PostsEn() {
@@ -105,7 +113,7 @@ export default function PostsEn() {
               style={{
                 width: "240px",
                 height: "160px",
-                objectFit: "contain", // shows full image
+                objectFit: "contain",
                 background: "var(--color-back-background)",
                 borderRadius: "12px",
                 border: "1px solid var(--color-border-color)",

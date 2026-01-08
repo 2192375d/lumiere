@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import { Link, useParams } from "react-router-dom";
-import { useLanguage } from "@contexts/languageContext";
+import { useLanguage } from "@contexts/LanguageContext";
 import { posts } from "@pages/posts/posts.en";
 import PostsFr from "@pages/posts/posts.fr";
 import PostsCn from "@pages/posts/posts.cn";
