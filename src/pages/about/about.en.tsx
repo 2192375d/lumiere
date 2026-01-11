@@ -7,7 +7,7 @@ export default function AboutEn() {
       <br />
       I'm someone who's interested in math, programming, composing and game dev
       <br />
-      Speak of which, I'm currently in the middle of a CS major and a music minor degree in University of Toronto
+      Speak of which, I'm currently in the middle of a software engineering degree and music (minor) degree
       Academically, I'm mostly interested in:
       <br />
       <ul>
@@ -18,8 +18,7 @@ export default function AboutEn() {
       </ul>
 
       {/* <p>My favorite type of chocolate is ""</p> */}
-      I spend a good chunk of my life playing video games, the games I played cover almost all genres out there, and I wanna become a game dev in the future
-
+      I do game dev from time to time but due to my lack of persistence I end up giving up most of them.
       <br />
     </>
   )

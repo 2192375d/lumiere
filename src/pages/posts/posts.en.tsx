@@ -13,7 +13,7 @@ export const posts: Post[] = [
     id: "all-ice",
     title: "AllIce in Wonderlands",
     date: "December 20th, 2025 - January 3rd, 2026",
-    description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses",
+    description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses; Winter Game Jam 2025 entry",
     loadComponent: () => import("@components/posts/all-ice.tsx"),
   },
   {
@@ -27,7 +27,7 @@ export const posts: Post[] = [
     id: "cirno-s",
     title: "Cirno's Swirlaria",
     date: "October 23rd - October 27th, 2025",
-    description: "bullet dodging and food making touhou game",
+    description: "bullet dodging and food making touhou game; Touhou Game Jam 16th entry",
     loadComponent: () => import("@components/posts/CirnoS.tsx"),
   },
   {

@@ -175,6 +175,22 @@ pre code {
 }
 .icon:hover {
   background: var(--color-post-background);
-  /* border-color: #ef4444; */
 }
 
+a > .icon {
+  border: 1px solid var(--color-h2);
+  background: transparent;
+  transition: box-shadow 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+a:hover > .icon {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-border-color);
+  transform: translateY(-1px);
+}
+
+a:focus-visible > .icon {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 2px var(--color-border-color);
+}

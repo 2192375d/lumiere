@@ -1,84 +1,97 @@
-import { useState, useContext, createContext } from "react";
+import { useRef, useState, createContext, useContext } from 'react'
 
 export type Soundtrack = {
+  id: string
   title: string
-  src: string
   date: string
-  duration: number
+  src: string
 }
 
 type SoundtrackContextValue = {
-  soundtrack: Soundtrack;
-  setSoundtrack: (soundtrack: Soundtrack) => void
-
+  soundtrack: Soundtrack | null
   playing: boolean
-  togglePlay: () => void
-  resume: () => void
-  pause: () => void
+  time: number
 
-  currentTime: number
-  seekBy: (time: number) => void
+  changeSoundtrack: (newSoundtrack: Soundtrack) => void
+  pause: () => void
+  resume: () => void
+  forwardTime: (timeInterval: number) => void // can take negative value to backward as well
 }
 
-export const EMPTY_SOUNDTRACK: Soundtrack = {
-  title: "",
-  src: "",
-  date: "",
-  duration: 0,
-};
-
-const SoundtrackContext = createContext<SoundtrackContextValue>({
-  soundtrack: EMPTY_SOUNDTRACK,
-
-  setSoundtrack: () => { },
-
-  playing: false,
-  togglePlay: () => { },
-  resume: () => { },
-  pause: () => { },
-
-  currentTime: 0,
-  seekBy: () => { },
-});
+export const SoundtrackContext = createContext<SoundtrackContextValue | null>(null);
 
 export function SoundtrackProvider({ children }: { children: React.ReactNode }) {
-  const [soundtrack, setSoundtrack] = useState<Soundtrack>(EMPTY_SOUNDTRACK);
-  const [playing, setPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
+  const [soundtrack, setSoundtrack] = useState<Soundtrack | null>(null)
+  const [playing, setPlaying] = useState(false)
+  const [time, setTime] = useState(0)
 
-  function resume() {
-    setPlaying(true)
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  function changeSoundtrack(newSoundtrack: Soundtrack) {
+    const audio = audioRef.current;
+    setSoundtrack(newSoundtrack);
+    setTime(0);
+
+    if (!audio) return;
+
+    audio.src = newSoundtrack.src;
+    audio.currentTime = 0;
+
+    audio.play()
+      .then(() => setPlaying(true))
+      .catch(() => setPlaying(false));
   }
 
   function pause() {
-    setPlaying(false)
+    setPlaying(false);
   }
 
-  function togglePlay() {
-    setPlaying(playing => !playing)
+  function resume() {
+    if (!soundtrack) { return; }
+    setPlaying(true);
   }
 
-  function seekBy(time: number) {
-    setCurrentTime(currentTime => currentTime + time)
+  function forwardTime(timeInterval: number) {
+    const audio = audioRef.current
+    if (!audio) return;
+
+    const nextTime = Math.min(
+      audio.duration,
+      Math.max(0, audio.currentTime + timeInterval)
+    );
+
+    audio.currentTime = nextTime;
+    setTime(nextTime);
   }
 
   return (
-    <SoundtrackContext.Provider value={{
-      soundtrack,
-      setSoundtrack,
-      playing,
-      togglePlay,
-      resume,
-      pause,
-      currentTime,
-      seekBy,
+    <SoundtrackContext.Provider
 
-    }}>
+      value={{
+        soundtrack,
+        playing,
+        time,
+        changeSoundtrack,
+        pause,
+        resume,
+        forwardTime,
+      }}
+    >
+      <audio
+        ref={audioRef}
+        onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+      />
       {children}
     </SoundtrackContext.Provider>
   );
 }
 
-export function useSoundtrack(): SoundtrackContextValue {
-  return useContext(SoundtrackContext);
+export function useSoundtrack() {
+  const context = useContext(SoundtrackContext);
+  if (!context) {
+    throw new Error("useSoundtrack must be used inside SoundtrackProvider");
+  }
+  return context;
 }
