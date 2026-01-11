@@ -11,7 +11,9 @@
 
   --color-border-color: #24385f;
 
-  --color-accent: #f97316;
+  /* --color-accent: #f97316; */
+  --color-accent: #8fbc8f;
+  /* --color-accent: #90b4ff; */
 
   /* post */
   --color-post-background: #142040;

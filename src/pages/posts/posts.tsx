@@ -1,4 +1,4 @@
-import { useLanguage } from "@contexts/languageContext";
+import { useLanguage } from "@contexts/LanguageContext";
 
 import PostsEn, { posts } from "@pages/posts/posts.en.tsx";
 import PostsFr from "@pages/posts/posts.fr.tsx";

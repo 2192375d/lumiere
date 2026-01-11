@@ -7,7 +7,7 @@ type IconProps = {
 export function Icon({ href, src, alt }: IconProps) {
   return (
     <a href={href}>
-      <img className="techImg" src={src} alt={alt} />
+      <img className="icon" src={src} alt={alt} />
     </a>
   );
 }

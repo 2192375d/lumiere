@@ -1,4 +1,4 @@
-import { useLanguage } from "@contexts/languageContext";
+import { useLanguage } from "@contexts/LanguageContext";
 // const languages: Language[] = ["english", "french", "japanese", "chinese"];
 
 export default function LanguageBar() {

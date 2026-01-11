@@ -10,6 +10,13 @@ type Post = {
 
 export const posts: Post[] = [
   {
+    id: "all-ice",
+    title: "AllIce in Wonderlands",
+    date: "December 20th, 2025 - January 3rd, 2026",
+    description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses; Winter Game Jam 2025 entry",
+    loadComponent: () => import("@components/posts/all-ice.tsx"),
+  },
+  {
     id: "smart-air",
     title: "Smart Air",
     date: "November 2nd - December 2nd 2025",
@@ -20,16 +27,17 @@ export const posts: Post[] = [
     id: "cirno-s",
     title: "Cirno's Swirlaria",
     date: "October 23rd - October 27th, 2025",
-    description: "bullet dodging and food making touhou game",
+    description: "bullet dodging and food making touhou game; Touhou Game Jam 16th entry",
     loadComponent: () => import("@components/posts/CirnoS.tsx"),
   },
   {
     id: "matrix-calculation",
     title: "Linear Algebra Calculator",
     date: "January 2024 - November 2025",
-    description: "A CLI based linear algebra calculator able to do basic matrix operations, Gaussian elimination and it's applications",
+    description: "A CLI based linear algebra calculator able to perform basic matrix operations, Gaussian elimination and it's applications",
     loadComponent: () => import("@components/posts/matrix-calculation.tsx"),
   },
+
 ];
 
 export default function PostsEn() {
@@ -37,7 +45,7 @@ export default function PostsEn() {
   return (
     <>
       <h1>DEV LOGS</h1>
-      (For each individual post, manually zoom in if an image is unclear)
+      Those are projects I did before that I decided to log
       <br />
 
       {posts.map(({ id, title, date, description }) => (
@@ -105,7 +113,7 @@ export default function PostsEn() {
               style={{
                 width: "240px",
                 height: "160px",
-                objectFit: "contain", // shows full image
+                objectFit: "contain",
                 background: "var(--color-back-background)",
                 borderRadius: "12px",
                 border: "1px solid var(--color-border-color)",

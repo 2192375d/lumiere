@@ -8,7 +8,7 @@ export default function navBar() {
         <Link to="/about">About</Link>
         <Link to="/tech">Tech</Link >
         <Link to="/posts">Dev Logs</Link >
-        {/* <Link to="/space">Space</Link> */}
+        <Link to="/music">Music Room</Link>
       </div >
     </div >
   )

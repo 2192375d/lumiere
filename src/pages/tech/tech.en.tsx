@@ -118,9 +118,9 @@ export default function TechEn() {
         alt="CMake"
       />
       <a href="https://gradle.org/">
-        <img className="techImg"
-          src={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original-wordmark.svg"}
-          alt={"Gradle"} />
+        <img className="icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original-wordmark.svg"
+          alt="Gradle" />
       </a>
       <Icon
         href="https://vitejs.dev/"
