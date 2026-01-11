@@ -45,7 +45,7 @@ export default function PostsEn() {
   return (
     <>
       <h1>DEV LOGS</h1>
-      (For each individual post, manually zoom in if an image is unclear)
+      Those are projects I did before that I decided to log
       <br />
 
       {posts.map(({ id, title, date, description }) => (
