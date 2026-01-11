@@ -1,4 +1,4 @@
-const ASSET_SOURCE = "/assets/posts/all-ice/";
+// const ASSET_SOURCE = "/assets/posts/all-ice/";
 
 export default function SmartAir() {
   return (
