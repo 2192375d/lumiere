@@ -1,4 +1,4 @@
-// const ASSET_SOURCE = "/assets/posts/matrix-calculation/";
+const ASSET_SOURCE = "/assets/posts/matrix-calculation/";
 
 export default function matrix_calculation() {
   return (
@@ -15,6 +15,18 @@ export default function matrix_calculation() {
       </ul>
       (Jump to the <a href="#matrix-calculation stage 3">stage 3</a> for the actual coding part)
 
+      <br />
+      Some screenshots of the calculator
+
+      <br />
+
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot8.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot2.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot3.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot9.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot5.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot6.png"} />
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot7.png"} />
       <br />
       <h3>purpose</h3>
       (This part is unnecessarily long so skip it unless that's what you are here for)
@@ -463,6 +475,8 @@ Vector Triangular_Matrix::forward_substitution(const Vector &b) const {
       I also implemented methods that computes the basis for the nullspace... you can refer to the source code if you are interested. As it takes forever to explain how I got it
       <br />
       <h3>Stage 5 (CLI interface)</h3>
+      <img className="postImg" src={ASSET_SOURCE + "cli-screenshot1.png"} />
+      <br />
       Next I reorganized all my files, and learned + utilized CMake for the compiling. So that I'm finally ready for the CLI interface
       <br />
       For the CLI interface, I made a file for Parser, a file for Engine. The Parser takes an input command and returns a struct defined as follow:
