@@ -6,7 +6,7 @@ export default function AboutFr() {
       <br />
       Je suis un étudient à l’Université de Toronto, actuellement en train de faire une majeur en informatique + une minor en musique
       <br />
-      Académiquement, mon sujet préférer est l’algèbre linéaire.
+      Académiquement, mon sujet préféré est l’algèbre linéaire.
     </>
   )
 }
