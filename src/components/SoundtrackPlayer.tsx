@@ -90,14 +90,14 @@ export default function SoundtrackPlayer({ soundtrack }: Props) {
               onClick={onSeek}
               style={{
                 cursor: "pointer",
-                width: "320px",        // ✅ match the progress width
-                display: "inline-block" // ✅ prevent it from stretching full width
+                width: "320px",
+                display: "inline-block"
               }}
             >
               <progress
                 value={shownTime}
                 max={shownDuration || 1}
-                style={{ width: "100%", pointerEvents: "none", display: "block" }} // ✅ fill wrapper
+                style={{ width: "100%", pointerEvents: "none", display: "block" }}
               />
             </div>
 
