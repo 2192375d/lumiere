@@ -62,6 +62,7 @@ export default function SmartAir() {
         <li>Firebase Authentication</li>
         <li>Firebase Realtime Database</li>
         <li>Android Studio/Android SDK (java + xml)</li>
+        <li>JUnit test</li>
         <li>Model View Process</li>
         <li>Scrum using Jira</li>
         <li>Object Oriented Programming</li>
@@ -144,7 +145,7 @@ export default function SmartAir() {
       <br />
       <img className="postImg" src={ASSET_SOURCE + "img24.png"} />
       <br />
-      After I connected the backend, and some final debuggings + testings, our project is complete.
+      After I connected the backend, and some final debuggings + testings. The testings where done using JUnit tests.
       <h3>conclusion</h3>
       This is my first long term team work project and this experience taught me a lot in both
       <br />
