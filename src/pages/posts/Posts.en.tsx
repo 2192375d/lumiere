@@ -14,7 +14,7 @@ export const posts: Post[] = [
     title: "AllIce in Wonderlands",
     date: "December 20th, 2025 - January 3rd, 2026",
     description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses; Winter Game Jam 2025 entry",
-    loadComponent: () => import("@components/posts/all-ice.tsx"),
+    loadComponent: () => import("@components/posts/All-ice.tsx"),
   },
   {
     id: "smart-air",
@@ -35,7 +35,7 @@ export const posts: Post[] = [
     title: "Linear Algebra Calculator",
     date: "January 2024 - November 2025",
     description: "A CLI based linear algebra calculator able to perform basic matrix operations, Gaussian elimination and it's applications",
-    loadComponent: () => import("@components/posts/matrix-calculation.tsx"),
+    loadComponent: () => import("@components/posts/Matrix-calculation.tsx"),
   },
 
 ];

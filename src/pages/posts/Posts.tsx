@@ -1,9 +1,9 @@
 import { useLanguage } from "@contexts/LanguageContext";
 
-import PostsEn, { posts } from "@pages/posts/posts.en.tsx";
-import PostsFr from "@pages/posts/posts.fr.tsx";
-import PostsJp from "@pages/posts/posts.jp.tsx";
-import PostsCn from "@pages/posts/posts.cn.tsx";
+import PostsEn, { posts } from "@pages/posts/Posts.en.tsx";
+import PostsFr from "@pages/posts/Posts.fr.tsx";
+import PostsJp from "@pages/posts/Posts.jp.tsx";
+import PostsCn from "@pages/posts/Posts.cn.tsx";
 
 export { posts };
 

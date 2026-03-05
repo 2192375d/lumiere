@@ -3,7 +3,7 @@ export default function HomeEn() {
     <div>
       <h1>HOME</h1>
       <p>
-        I put stuffs here, mainly my random posts and projects I do
+        I put stuffs here, Mainly my random posts and projects I do
       </p>
 
       <p>

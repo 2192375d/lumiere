@@ -1,4 +1,4 @@
-import { Icon } from "@components/icon.tsx";
+import { Icon } from "@components/Icon.tsx";
 
 export default function TechEn() {
   return (
@@ -154,7 +154,7 @@ export default function TechEn() {
         (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
       </p>
       <p>
-        (I don't have images for the followings becase they are not in the public domain)
+        (I don't have images for the followings becase they are not in the public doMain)
       </p>
       <ul>
         <li><a href="https://www.aseprite.org/">Aseprite</a></li>

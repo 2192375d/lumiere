@@ -1,10 +1,10 @@
 import { Suspense, lazy } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLanguage } from "@contexts/LanguageContext";
-import { posts } from "@pages/posts/posts.en";
-import PostsFr from "@pages/posts/posts.fr";
-import PostsCn from "@pages/posts/posts.cn";
-import PostsJp from "@pages/posts/posts.jp";
+import { posts } from "@pages/posts/Posts.en";
+import PostsFr from "@pages/posts/Posts.fr";
+import PostsCn from "@pages/posts/Posts.cn";
+import PostsJp from "@pages/posts/Posts.jp";
 
 export default function PostPage() {
   const { language } = useLanguage();

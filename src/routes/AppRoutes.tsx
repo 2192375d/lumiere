@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "@pages/home/home";
-import About from "@pages/about/about";
-import Posts from "@pages/posts/posts";
+import Home from "@pages/home/Home";
+import About from "@pages/about/About";
+import Posts from "@pages/posts/Posts";
 import PostPage from "@pages/posts/Post";
-import Tech from "@pages/tech/tech";
-import Music from "@pages/music/music"
+import Tech from "@pages/tech/Tech";
+import Music from "@pages/music/Music"
 
 export default function AppRoutes() {
   return (
