@@ -8,18 +8,15 @@ import './App.css'
 
 export default function App() {
   return (
-    <>
-      <div className="hcontainer">
-        <div className="navColumn">
-          <LanguageBar />
-          <NavBar />
-        </div>
-        <div className="main_page">
-
-          <AppRoutes />
-        </div>
-      </div >
-    </>
+    <div className="hcontainer apppage">
+      <div className="vcontainer utilitybar">
+        <LanguageBar />
+        <NavBar />
+      </div>
+      <div className="mainpage">
+        <AppRoutes />
+      </div>
+    </div>
   )
 }
 

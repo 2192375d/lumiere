@@ -1,20 +1,23 @@
 export default function AboutEn() {
   return (
-    <>
+    <div>
       <h1>ABOUT</h1>
-      Hi, you can call me Lumiere
+      <p>
+        Hi, you can call me Lumiere
+      </p>
 
-      <br />
       <ul>
         <li>github: https://github.com/2192375d</li>
         <li>itch.io: https://2635266513.itch.io/</li>
         <li>email: 173829746yzpq@gmail.com</li>
       </ul>
-      I'm someone who's interested in math, programming, composing and game dev
-      <br />
-      Speak of which, I'm currently in the middle of a software engineering degree and music (minor) degree
-      Academically, I'm mostly interested in:
-      <br />
+      <p>
+        I'm someone who's interested in math, programming, composing and game dev
+      </p>
+      <p>
+        Speak of which, I'm currently in the middle of a software engineering degree and music (minor) degree
+        Academically, I'm mostly interested in:
+      </p>
       <ul>
         <li>linear algebra</li>
         <li>theory of computation</li>
@@ -22,10 +25,11 @@ export default function AboutEn() {
         <li>music theory</li>
       </ul>
 
-      I do game dev from time to time but due to my lack of persistence I end up giving up most of them.
-      <br />
+      <p>
+        I do game dev from time to time but due to my lack of persistence I end up giving up most of them.
+      </p>
 
-    </>
+    </div>
   )
 }
 

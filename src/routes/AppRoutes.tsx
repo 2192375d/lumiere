@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "@pages/home/home";
 import About from "@pages/about/about";
 import Posts from "@pages/posts/posts";
-import PostPage from "@pages/posts/PostPage";
+import PostPage from "@pages/posts/Post";
 import Tech from "@pages/tech/tech";
 import Music from "@pages/music/music"
 

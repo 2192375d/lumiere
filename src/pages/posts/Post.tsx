@@ -13,7 +13,7 @@ export default function PostPage() {
 
   if (language === "french") return <PostsFr />;
   if (language === "chinese") return <PostsCn />;
-  if (language === "japanese") return <PostsJp />; // add a JP placeholder if empty
+  if (language === "japanese") return <PostsJp />;
 
   if (!post) {
     return (

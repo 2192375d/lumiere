@@ -2,10 +2,11 @@ import { Icon } from "@components/icon.tsx";
 
 export default function TechEn() {
   return (
-    <>
+    <div>
       <h1>TECH</h1>
-      This page contains most technologies I used
-      <br />
+      <p>
+        This page contains most technologies I used
+      </p>
       <Icon
         href="https://en.wikipedia.org/wiki/C_(programming_language)"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
@@ -149,10 +150,12 @@ export default function TechEn() {
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
         alt="Godot"
       />
-      <br />
-      (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
-      <br />
-      (I don't have images for the followings becase they are not in the public domain)
+      <p>
+        (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
+      </p>
+      <p>
+        (I don't have images for the followings becase they are not in the public domain)
+      </p>
       <ul>
         <li><a href="https://www.aseprite.org/">Aseprite</a></li>
         <li><a href="https://krita.org/">Krita</a></li>
@@ -160,6 +163,6 @@ export default function TechEn() {
         <li><a href="https://musescore.org/">MuseScore</a></li>
         <li><a href="https://gamemaker.io/">GameMaker Studio</a></li>
       </ul>
-    </>
+    </div>
   )
 }
