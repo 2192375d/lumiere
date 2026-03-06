@@ -1,11 +1,55 @@
 import { useLanguage } from "@contexts/LanguageContext";
 
-import PostsEn, { posts } from "@pages/posts/Posts.en.tsx";
+import PostsEn from "@pages/posts/Posts.en.tsx";
 import PostsFr from "@pages/posts/Posts.fr.tsx";
 import PostsJp from "@pages/posts/Posts.jp.tsx";
 import PostsCn from "@pages/posts/Posts.cn.tsx";
 
-export { posts };
+export type Post = {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  source: { kind: "md"; path: string } | null;
+  loadComponent: () => Promise<{ default: React.ComponentType }> | null;
+};
+
+export const posts: Post[] = [
+  {
+    id: "all-ice",
+    title: "AllIce in Wonderlands",
+    date: "December 20th, 2025 - January 3rd, 2026",
+    description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses; Winter Game Jam 2025 entry",
+    source: { kind: "md", path: "" },
+    loadComponent: () => import("@components/posts/All-ice.tsx"),
+  },
+  {
+    id: "smart-air",
+    title: "Smart Air",
+    date: "November 2nd - December 2nd 2025",
+    description: "An Android mobile app to help parent/child to track Athsma",
+    source: null,
+    loadComponent: () => import("@components/posts/Smart-Air.tsx"),
+  },
+  {
+    id: "cirno-s",
+    title: "Cirno's Swirlaria",
+    date: "October 23rd - October 27th, 2025",
+    description: "bullet dodging and food making touhou game; Touhou Game Jam 16th entry",
+    source: null,
+    loadComponent: () => import("@components/posts/CirnoS.tsx"),
+  },
+  {
+    id: "matrix-calculation",
+    title: "Linear Algebra Calculator",
+    date: "January 2024 - November 2025",
+    description: "A CLI based linear algebra calculator able to perform basic matrix operations, Gaussian elimination and it's applications",
+    source: null,
+    loadComponent: () => import("@components/posts/Matrix-calculation.tsx"),
+  },
+
+];
+
 
 export default function Posts() {
   const { language } = useLanguage();
