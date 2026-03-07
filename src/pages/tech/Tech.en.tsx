@@ -150,6 +150,16 @@ export default function TechEn() {
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
         alt="Godot"
       />
+      <Icon
+        href="https://www.prisma.io"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+        alt="Prisma"
+      />
+      <Icon
+        href="https://expressjs.com/"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+        alt="Express"
+      />
       <p>
         (Ty for the icons from <a href="https://devicon.dev/">devicon</a>)
       </p>
