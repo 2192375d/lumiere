@@ -1,9 +1,9 @@
 import { useLanguage } from "@contexts/LanguageContext";
 
-import MusicEn from "@pages/music/music.en.tsx";
-import MusicFr from "@pages/music/music.fr.tsx";
-import MusicJp from "@pages/music/music.jp.tsx";
-import MusicCn from "@pages/music/music.cn.tsx";
+import MusicEn from "@pages/music/Music.en.tsx";
+import MusicFr from "@pages/music/Music.fr.tsx";
+import MusicJp from "@pages/music/Music.jp.tsx";
+import MusicCn from "@pages/music/Music.cn.tsx";
 
 export default function Music() {
   const { language } = useLanguage();

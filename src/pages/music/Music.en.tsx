@@ -33,10 +33,11 @@ const Soundtracks: Array<Soundtrack> = [
 
 export default function MusicEn() {
   return (
-    <>
+    <div>
       <h1>MUSIC ROOM</h1>
-      I leave some soundtracks here
-      <br />
+      <p>
+        I leave some soundtracks here
+      </p>
 
       <div className="vcontainer">
         {Soundtracks.map((soundtrack) => (
@@ -45,7 +46,7 @@ export default function MusicEn() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

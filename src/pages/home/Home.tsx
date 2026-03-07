@@ -1,9 +1,9 @@
 import { useLanguage } from "@contexts/LanguageContext";
 
-import HomeEn from "@pages/home/home.en.tsx";
-import HomeFr from "@pages/home/home.fr.tsx";
-import HomeJp from "@pages/home/home.jp.tsx";
-import HomeCn from "@pages/home/home.cn.tsx";
+import HomeEn from "@pages/home/Home.en.tsx";
+import HomeFr from "@pages/home/Home.fr.tsx";
+import HomeJp from "@pages/home/Home.jp.tsx";
+import HomeCn from "@pages/home/Home.cn.tsx";
 
 export default function Home() {
   const { language } = useLanguage();

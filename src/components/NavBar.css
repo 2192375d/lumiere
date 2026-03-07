@@ -1,0 +1,11 @@
+.navbar {
+  border: solid  1px;
+  border-color: var(--color-border-color);
+  line-height: 25px;
+
+  gap: 15px;
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+}

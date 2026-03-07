@@ -1,4 +1,6 @@
 import { useLanguage } from "@contexts/LanguageContext";
+
+import './LanguageBar.css';
 // const languages: Language[] = ["english", "french", "japanese", "chinese"];
 
 export default function LanguageBar() {
@@ -6,7 +8,7 @@ export default function LanguageBar() {
 
   return (
     <>
-      <div className="hcontainer">
+      <div className="hcontainer languagebar">
         <button
           onClick={() => setLanguage("english")}>
           en

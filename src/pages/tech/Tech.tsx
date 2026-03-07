@@ -1,9 +1,9 @@
 import { useLanguage } from "@contexts/LanguageContext";
 
-import TechEn from "@pages/tech/tech.en.tsx";
-import TechFr from "@pages/tech/tech.fr.tsx";
-import TechJp from "@pages/tech/tech.jp.tsx";
-import TechCn from "@pages/tech/tech.cn.tsx";
+import TechEn from "@pages/tech/Tech.en.tsx";
+import TechFr from "@pages/tech/Tech.fr.tsx";
+import TechJp from "@pages/tech/Tech.jp.tsx";
+import TechCn from "@pages/tech/Tech.cn.tsx";
 
 export default function Tech() {
   const { language } = useLanguage();

@@ -1,6 +1,6 @@
 const ASSET_SOURCE = "/assets/posts/matrix-calculation/";
 
-export default function matrix_calculation() {
+export default function Matrix_calculation() {
   return (
     <section>
 
@@ -188,7 +188,7 @@ Matrix Matrix::operator+(const Matrix &right) const {
       Until two months ago (early October 2025?), I decided to proceed.
 
       <br />
-      The main motivation is that I see two courses have applications tied to this project, where the two courses are <a href="https://utsc.calendar.utoronto.ca/course/matb24h3">linear algebra 2</a> and <a href="https://utsc.calendar.utoronto.ca/course/cscc37h3">introduction to numerical algorithms for computational mathematics</a>.
+      The Main motivation is that I see two courses have applications tied to this project, where the two courses are <a href="https://utsc.calendar.utoronto.ca/course/matb24h3">linear algebra 2</a> and <a href="https://utsc.calendar.utoronto.ca/course/cscc37h3">introduction to numerical algorithms for computational mathematics</a>.
 
       <br />
       Unlike previous attempts, I decided to straight up use my highschool codes, with the my first goal of implementing <a href="https://en.wikipedia.org/wiki/Gaussian_elimination">Gaussian Elimination</a>
