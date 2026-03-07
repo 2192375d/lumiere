@@ -1,0 +1,25 @@
+.postContent {
+  background: var(--color-post-background);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  padding: 24px;
+}
+
+.postContent img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.postContent h2 {
+  border: 1px solid var(--color-h2);
+  padding: 8px;
+}
+
+.postContent a {
+  color: var(--color-post-accent);
+}
+.postContent a:hover {
+  color: var(--color-post-hover);
+}

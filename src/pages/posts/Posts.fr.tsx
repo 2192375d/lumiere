@@ -1,7 +1,7 @@
 export default function PostsFr() {
   return (
-    <>
-      Cette page n'est pas encore traduite
-    </>
+    <div>
+      <p>Cette page n'est pas encore traduite</p>
+    </div>
   );
 }

@@ -10,8 +10,8 @@ export type Post = {
   title: string;
   date: string;
   description: string;
-  source: { kind: "md"; path: string } | null;
-  loadComponent: () => Promise<{ default: React.ComponentType }> | null;
+  imgPath: string;
+  source: { kind: "md"; path: string };
 };
 
 export const posts: Post[] = [
@@ -20,32 +20,32 @@ export const posts: Post[] = [
     title: "AllIce in Wonderlands",
     date: "December 20th, 2025 - January 3rd, 2026",
     description: "A topdown adventure game where you explore an icy world, acquire new ability, fight bosses; Winter Game Jam 2025 entry",
-    source: { kind: "md", path: "" },
-    loadComponent: () => import("@components/posts/All-ice.tsx"),
+    imgPath: "/assets/posts-icon/all-ice.webp",
+    source: { kind: "md", path: "/posts/all-ice.md" },
   },
   {
     id: "smart-air",
     title: "Smart Air",
     date: "November 2nd - December 2nd 2025",
     description: "An Android mobile app to help parent/child to track Athsma",
-    source: null,
-    loadComponent: () => import("@components/posts/Smart-Air.tsx"),
+    imgPath: "/assets/posts-icon/smart-air.webp",
+    source: { kind: "md", path: "smart-air.md" },
   },
   {
     id: "cirno-s",
     title: "Cirno's Swirlaria",
     date: "October 23rd - October 27th, 2025",
     description: "bullet dodging and food making touhou game; Touhou Game Jam 16th entry",
-    source: null,
-    loadComponent: () => import("@components/posts/CirnoS.tsx"),
+    imgPath: "/assets/posts-icon/cirno-s.webp",
+    source: { kind: "md", path: "cirno-s.md" },
   },
   {
     id: "matrix-calculation",
     title: "Linear Algebra Calculator",
     date: "January 2024 - November 2025",
     description: "A CLI based linear algebra calculator able to perform basic matrix operations, Gaussian elimination and it's applications",
-    source: null,
-    loadComponent: () => import("@components/posts/Matrix-calculation.tsx"),
+    imgPath: "/assets/posts-icon/matrix-calculation.webp",
+    source: { kind: "md", path: "matrix-calculation.md" },
   },
 
 ];
@@ -63,6 +63,9 @@ export default function Posts() {
   if (language === "chinese") {
     return <PostsCn />;
   }
+  if (language === "english") {
+    return <PostsEn />;
+  }
 
-  return <PostsEn />;
+  throw new Error('Unexpected language: ' + { language });
 }

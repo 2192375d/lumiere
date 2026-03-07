@@ -88,42 +88,6 @@ pre code {
 }
 
 /*_____________________posts_____________________*/
-.postImg {
-  max-width: 350px;
-  height: auto;
-  max-height: 350px;
-  border-radius: 8px;
-  margin: 10px;
-}
-
-/* .postsNavBar { */
-/*   line-height: 2; */
-/*   border: 1px solid; */
-/*   border-color: var(--color-border-color); */
-/*   font-size: 20px; */
-/*   text-align: center; */
-/*   width: 200px; */
-/*   padding: 2px; */
-/* } */
-
-.postContent {
-  background: var(--color-post-background);
-  box-shadow: 0 8px 20px rgba(115,85,240,0.18);
-  padding: 16px;
-  margin-bottom: 50px;
-}
-
-.postContent h2 {
-  border: 1px solid var(--color-h2);
-  padding: 8px;
-}
-
-.postContent a {
-  color: var(--color-post-accent);
-}
-.postContent a:hover {
-  color: var(--color-post-hover);
-}
 
 .icon {
   border: 2px solid;
